@@ -1,10 +1,9 @@
 import css from "./button.module.css"
 
-console.log(css);
-
-function Button() {
+function Button(props) {
+    
     return (
-        <button className={css["search-btn"]}>
+        <button onClick={props.click} className={css["search-btn"]}>
             Поиск +
         </button>
     )

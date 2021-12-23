@@ -1,8 +1,13 @@
 import "./input.css"
 
-function Input() {
+function Input(props) {
+    
+    const handleChange = (e) => {
+        props.change(e.target.value);
+    }
+
     return (
-        <input className='inp' placeholder='Поиск' />
+        <input value={props.value} onChange={handleChange} className='inp' placeholder='Поиск' />
     )
 }
 

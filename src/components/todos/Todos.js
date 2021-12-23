@@ -20,7 +20,6 @@ export const Todos = () => {
 
   return (
     <ul>
-      <div className={css.test} >Hello from Todo</div>
       {
         todoList.map((item) => {
           return <TodoItem value={item} /> // TodoItem({ value: "Купить сахар" })
