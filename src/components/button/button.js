@@ -4,7 +4,7 @@ function Button(props) {
     
     return (
         <button onClick={props.click} className={css["search-btn"]}>
-            Поиск +
+            Добавить +
         </button>
     )
 }

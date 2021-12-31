@@ -7,7 +7,7 @@ function Input(props) {
     }
 
     return (
-        <input value={props.value} onChange={handleChange} className='inp' placeholder='Поиск' />
+        <input value={props.value} onChange={handleChange} className='inp' placeholder='Todo' />
     )
 }
 
